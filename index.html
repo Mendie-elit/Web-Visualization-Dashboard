@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+<!-- Insert title here -->
+
+  <title>Weather and Latitude Analysis</title>
+
+
+
+  <!-- reset css -->
+
+  <link rel="stylesheet" href="reset.css">
+
+  <!-- Bring in our bootstrap stylesheet -->
+
+  <link rel="stylesheet" 
+
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+
+<body>
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- A black horizontal navbar that becomes vertical on small screens -->
+    <!-- standard nav bar class followed by a responsive collapsing class:.navbar-expand-sm -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+
+    <!-- menu button which links to index that only appears when size is shrunk -->
+        <a class="nav-link" href="index.html"> 
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"> </span>
+
+            </button>
+
+        </a>
+
+        <ul class="navbar-nav">
+
+            <!-- Home button -->
+
+            <li class="nav-item active">
+
+                <a class="nav-link" href="index.html">  
+
+                Weather and Latitude Summary</a>
+
+            </li>
+
+        </ul>
+
+
+
+        <!-- right side of navbar -->
+        <!-- Drop down menu -->
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown ml-auto">
+
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+
+                aria-haspopup="true" aria-expanded="false">Plots</a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+
+                    <a class="dropdown-item" href="MaxTemp_page.html">Max Temperature</a>
+
+                    <a class="dropdown-item" href="Humidity_page.html">Humidity</a>
+
+                    <a class="dropdown-item" href="Cloudiness_page.html">Cloudiness</a>
+
+                    <a class="dropdown-item" href="WindSpeed_page.html">Wind Speed </a>
+
+                </div>
+
+            </li> 
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="Comparisons_page.html">Comparison
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="Data_page.html">Data</a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Main Body: bootstrap -->
+
+      <div style="background-color:gray;">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                </br>
+
+                </br> <!-- line break to push header down -->
+
+            </div>
+
+        </div>
+
+      </div> <!-- background color -->
+
+        <!-- Header -->
+
+    <div class = 'container-fluid'>
+
+        <div class="row align-items-center">
+
+            <div class = 'col-md-4'></div>
+
+            <div class="col-lg-4">
+
+                <h1 class="intro">Project Summary</h1>
+
+            </div>
+
+            <div class = 'col-md-4'> </br> </br> </div>
+
+        </div>
+
+        <!-- line breaks to push header down -->
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                </br> 
+
+                </br>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- main content -->
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <figure> <!-- clicking image opens a new tab with my image -->                
+
+                    <a target="_blank" href="C:\Users\mendi\Documents\Images\Lat_v_max_temp.png">
+
+                    <img src="C:\Users\mendi\Documents\Images\Lat_v_max_temp.png"
+
+                    alt = "Latitued vs. Max Temperature Plot" height="450" width="600">
+
+                    </a>
+
+                </figure>
+
+            </div>
+
+            <!-- summary paragraph -->
+
+            <div class="col-lg-6">
+
+                <p> &emsp; This project examines the relationship of weather patterns in cities
+
+                based on their coorelation to the equator. Using Python libraries, citipy, and API's,
+
+                statistics were obtained for the max temperature, humidity, cloudiness, and wind speed for
+
+                more than 500 randomly selected cities.  This data was then plotted using MatPlotLib to obtain a visualization of
+                
+                the results.
+
+                </br>
+
+               
+                </br>
+
+                This site contains a page for each of the four weather statistics selected, each page includes a graph 
+                
+                and a summary of the results which may be accessed by clicking on the graph below or through the Plot menu.
+
+                The Comparison page contains all four graphs and the Data page includes a table of the data for each city. 
+
+                </p>
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Visualizations -->
+
+        <!-- Header -->
+
+    <div id = "bottom_visual" class="container"> 
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                </br> <!-- line break to push header down -->
+
+            </div>
+
+        </div>
+
+        <hr> <!-- horizontal line -->
+
+
+
+        <!-- Header content for visualization section -->
+
+        <div class="row align-items-center">
+
+            <div class = 'col-md-4'></br></br></br></div>
+
+            <div class="col-lg-4">
+
+                <h3 id="bot_header">Visualizations</h3>
+
+            </div>
+
+            <div class = 'col-md-4'></br></br></br></div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-3">
+
+                <a href="MaxTemp_page.html">
+
+                    <img src="C:\Users\mendi\Documents\Images\Lat_v_max_temp.png"
+
+                    alt = "Max Temp vs. Latitude" height="225" width="300">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Humidity_page.html">
+
+                    <img src="C:\Users\mendi\Documents\Images\Lat_v_humidity.png"
+
+                    alt = "Max Temp vs. Latitude" height="225" width="300">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="cloudiness_page.html">
+
+                    <img src="C:\Users\mendi\Documents\Images\Lat_v_cloudiness.png"
+
+                    alt = "Max Temp vs. Latitude" height="225" width="300">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="WindSpeed_page.html">
+
+                        <img src="C:\Users\mendi\Documents\Images\lat_v_windspeed.png"
+
+                        alt = "Max Temp vs. Latitude" height="225" width="300">
+
+                </a>
+
+            </div>
+
+        </div>
+
+             
+
+        <hr>
+
+    </div>
+
+</body>
+
+</html>
